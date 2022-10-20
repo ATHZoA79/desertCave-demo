@@ -167,8 +167,6 @@ header .pagination .content a {
 }
 
 main {
-  position: relative;
-  top: 103px;
   width: 100%;
 }
 main .banner {

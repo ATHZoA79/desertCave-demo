@@ -185,8 +185,6 @@ header {
 
 
 main {
-    position: relative;
-    top: 103px;
     width: 100%;
     .banner {
         @include dimension(100%, 1029px);

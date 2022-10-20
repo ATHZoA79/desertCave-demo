@@ -81,7 +81,7 @@ body {
 
 header {
     @include dimension(100%, 103px);
-    position: fixed;
+    position: relative;
     top: 0;
     border-top: 7px solid #1370a5;
     background-color: $grey-9;
