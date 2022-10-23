@@ -62,7 +62,7 @@ body {
 header {
     @include dimension(100%, 103px);
     position: fixed;
-    border-top: 7px solid #1370a5;
+    border-top: 7px solid #8dd7cc;
     background-color: $grey-9;
     z-index: 1;
     transition: .25s ease;
