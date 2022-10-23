@@ -8,6 +8,8 @@ $grey-7: #969696;
 $grey-6: #7e7e7e;
 $grey-2: #242424;
 $grey-1: #121212;
+$primary: #8dd7cc;
+$secondary: #eeb8af;
 $redwine: #901111;
 $logo_color: rgb(141, 215, 204);
 $darkgold: rgb(107, 78, 38);
@@ -83,7 +85,7 @@ header {
     @include dimension(100%, 103px);
     position: relative;
     top: 0;
-    border-top: 7px solid #8dd7cc;
+    border-top: 7px solid $primary;
     background-color: $grey-9;
     z-index: 1;
 
@@ -354,6 +356,84 @@ footer {
     }
 
     #phone_Ham:checked + .phone-ham-list {
+        visibility: visible;
+        height: 100vh;
+        width: 100%;
+    }
+}
+
+
+// RWD
+@media screen and (max-width: 720px) {
+    header {
+        position: relative;
+
+        nav {
+            padding: 0 20px;
+
+            .nav-logo {
+                @include dimension(96px, 96px);
+                position: absolute;
+                top: 0;
+                left: 50%;
+                translate: -50% 0;
+            }
+
+            .nav-btns,
+            .social-media-area {
+                display: none;
+            }
+        }
+
+        .ham-icon {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            display: block;
+            font-size: 3rem;
+            // background-color: rgb(48, 68, 111);
+            z-index: 20;
+        }
+
+        #ham_icon:checked~#toggle_menu {
+            display: block;
+            visibility: visible;
+        }
+
+        #toggle_menu {
+            @include dimension(100%, 100vh);
+            position: fixed;
+            top: 0;
+            display: none;
+            visibility: hidden;
+            background-color: $primary;
+        }
+    }
+
+    .pagination {
+        .content {
+            width: 100%;
+            color: white;
+        }
+    }
+
+    footer {
+
+        .information,
+        .map {
+            position: relative !important;
+            top: 0;
+            left: 0;
+            translate: 0 0;
+        }
+
+        // .map {
+        //     display: none;
+        // }
+    }
+
+    #phone_Ham:checked+.phone-ham-list {
         visibility: visible;
         height: 100vh;
         width: 100%;
