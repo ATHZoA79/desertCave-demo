@@ -514,13 +514,19 @@ main {
         .swiper {
             @include dimension(100%, 500px);
             // background-color: darkblue;
+            .swiper-wrapper {
+                position: relative;
+                left: 50%;
+                translate: -144px 0;
+            }
 
             .swiper-slide {
+                @include dimension(289px, auto);
                 @include flex-col(start, center);
                 border: 1px solid black;
 
                 .swiper-product-img {
-                    @include dimension(100%, 90%);
+                    @include dimension(289px, 289px);
                     // border: #901111 1px solid;
 
                     img {

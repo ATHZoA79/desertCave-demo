@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/loading.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <script src="./script/loading.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -179,7 +180,19 @@
         <img id="img_logo_done" src="./img/logo-green.png" alt="" class="">
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
+        var swiper = new Swiper("#swiper_1", {
+            slidesPerView: 1,
+            spaceBetween: 114,
+            centeredSlides: true,
+            slidesOffsetBefore: 0,
+            width: 289,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
     </script>
 </body>
 

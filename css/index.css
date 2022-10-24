@@ -441,7 +441,14 @@ main .swiper-area .swiper {
   width: 100%;
   height: 500px;
 }
+main .swiper-area .swiper .swiper-wrapper {
+  position: relative;
+  left: 50%;
+  translate: -144px 0;
+}
 main .swiper-area .swiper .swiper-slide {
+  width: 289px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -449,8 +456,8 @@ main .swiper-area .swiper .swiper-slide {
   border: 1px solid black;
 }
 main .swiper-area .swiper .swiper-slide .swiper-product-img {
-  width: 100%;
-  height: 90%;
+  width: 289px;
+  height: 289px;
 }
 main .swiper-area .swiper .swiper-slide .swiper-product-img img {
   width: 100%;
